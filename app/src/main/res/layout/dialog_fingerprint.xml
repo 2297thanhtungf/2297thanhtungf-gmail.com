@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/img_fingerprint"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_fingerprint" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/img_fingerprint"
+        android:layout_margin="5dp"
+        android:id="@+id/item_title"
+        android:gravity="center"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/item_title"
+        android:layout_margin="5dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/item_description"
+        android:gravity="center"
+        android:textSize="14sp"
+        />
+    <Button
+        android:id="@+id/btn_huy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_description"
+        android:background="@null"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/btn_cancel"
+        android:text="HỦY"
+        android:textSize="13dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_description"
+        android:background="@null"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="THỬ LẠI"
+        android:textSize="13dp"
+        android:textColor="#31AE4A" />
+
+
+</RelativeLayout>
